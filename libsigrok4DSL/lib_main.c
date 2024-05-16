@@ -1693,7 +1693,7 @@ SR_PRIV void xsleep(int ms)
 #ifdef _WIN32
 	Sleep(ms);
 #else
-	usleep(ms * 1000);
+	g_usleep(ms * 1000);
 #endif
 }
 
